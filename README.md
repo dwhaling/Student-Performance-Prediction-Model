@@ -6,6 +6,13 @@ The project was completed as part of **CMPUT 466 (Machine Learning)** at the **U
 
 The models are trained on the **UCI Student Performance Dataset** and evaluated using validation and test sets to compare predictive performance.
 
+**Models implemented:**
+- Logistic Regression (MLE and MAP)
+- Neural Network
+- Gaussian Naive Bayes
+
+Best Accuracy: 94.94%
+
 ---
 
 ## Dataset
@@ -106,6 +113,56 @@ Confusion matrices were used to visualize model performance and compare predicti
 - Naive Bayes provided a competitive baseline despite minimal tuning
 
 ---
+
+## Installation
+
+Clone the repository and install the required Python packages.
+
+```bash
+git clone https://github.com/dwhaling/student-performance-prediction.git
+cd student-performance-prediction
+pip install numpy pandas scikit-learn matplotlib
+```
+
+---
+
+## Running the Project
+
+Each model is implemented in a separate script and can be run independently.
+
+### Logistic Regression (MLE)
+```bash
+python mle.py
+```
+
+### Logistic Regression (MAP)
+```bash
+python map.py
+```
+
+### Gaussian Naive Bayes
+```bash
+python bayes.py
+```
+
+### Neural Network
+```bash
+python nn.py
+```
+
+### What the Scripts Do
+
+Each script will:
+
+1. Load and preprocess the dataset  
+2. Train the specified machine learning model  
+3. Evaluate performance on validation and test sets  
+4. Generate output files containing accuracy results and confusion matrices  
+
+Sample output files and evaluation results are included in the `evaluation/` folder.
+
+---
+
 
 ## Technologies Used
 
